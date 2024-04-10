@@ -1,5 +1,3 @@
-package actividadPOO;
-
 import java.util.Random;
 
 public class Persona {
@@ -12,8 +10,8 @@ public class Persona {
     private float altura;
 
     public Persona(String nombre, int edad, char sexo) {
-        this.nombre = nombre;
-        this.edad = edad;
+        this.nombre = "";
+        this.edad = 0;
         this.cedula = this.crearCedula();
         this.sexo = 'H';
         this.peso = 0;
@@ -141,7 +139,7 @@ public class Persona {
     
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + ", cedula=" + cedula + ", sexo=" + sexo + ", peso=" + peso + ", altura=" + altura + '}';
+        return "Persona{" + "Cedula=" + cedula + ", Sexo=" + sexo + ", Peso=" + peso + ", Altura=" + altura + '}';
     }
     
 }
